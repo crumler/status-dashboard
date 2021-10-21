@@ -1,9 +1,12 @@
-import '../index.css';
+
 
 const FetchButton = (props) => {
 
   return (
-    <button className="fetchButton" onClick={props.fetchData}>Fetch!</button>
+    <div className="fetchButton">
+      <button onClick={props.fetchData}>Fetch!</button>
+    </div>
+    
   )
 }
 

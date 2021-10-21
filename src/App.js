@@ -3,6 +3,7 @@ import './App.css';
 import Axios from 'axios';
 import Header from './components/Header';
 import FetchButton from './components/FetchButton';
+import HerokuStatus from './components/HerokuStatus';
 
 function App() {
   const HerokuURL = "https://status.heroku.com/api/v4/current-status";
@@ -20,10 +21,7 @@ function App() {
     <div>
       <Header />
       <FetchButton status={herokuStatus} fetchData={fetchData} />
-      
-      <div className="currentStatus">
-        <h2>{herokuStatus}</h2>
-      </div>
+      <HerokuStatus status={herokuStatus}/>
     </div> 
   );
 }
