@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #f0eaff;
 }
 
 header h1,
@@ -15,5 +16,9 @@ header h1,
 }
 
 .currentHerokuStatus {
+  display: flex;
+  max-width: 10rem;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid black;
 }
