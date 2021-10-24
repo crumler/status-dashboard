@@ -22,3 +22,8 @@ header h1,
   align-items: center;
   border: 1px solid black;
 }
+
+.currentHerokuStatus h3,
+.currentGithubStatus h3 {
+  border-bottom: 1px solid black;
+}
