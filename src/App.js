@@ -36,8 +36,8 @@ function App() {
 
   useEffect(() => {
     Axios.get(githubURL).then((response) => {
-      console.log(response.data);
-      console.log(response.data.components[0].status);
+      // console.log(response.data);
+      // console.log(response.data.components[0].status);
       setGithubGitOperations(response.data.components[0].status);
       setGithubApiRequests(response.data.components[1].status);
       setGithubWebhooks(response.data.components[2].status);
